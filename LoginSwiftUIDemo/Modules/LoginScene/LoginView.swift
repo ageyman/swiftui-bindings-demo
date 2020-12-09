@@ -29,24 +29,9 @@ struct LoginView: View {
                 .frame(width: UIScreen.main.bounds.width * 0.67)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .font(.headline)
-
-
-            Button(action: {}) {
-                HStack {
-                    Text("Login")
-                        .fontWeight(.bold)
-                        .font(.title2)
-                        .padding()
-                        .foregroundColor(.white)
-                }
-            }
-            .frame(width: UIScreen.main.bounds.width * 0.67)
-            .background(Color.blue)
-            .cornerRadius(22)
-            .disabled(viewModel.shouldEnableButton(text: [email, password]))
+            LoginButtonView()
+                .disabled(viewModel.shouldEnableButton(text: [email, password]))
         }
         Spacer()
     }
-
-
 }
