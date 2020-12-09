@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		A06C61042580AA470086D389 /* LoginSwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C61032580AA470086D389 /* LoginSwiftUIDemoApp.swift */; };
-		A06C61062580AA470086D389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C61052580AA470086D389 /* ContentView.swift */; };
+		A06C61062580AA470086D389 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C61052580AA470086D389 /* LoginView.swift */; };
 		A06C61082580AA490086D389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06C61072580AA490086D389 /* Assets.xcassets */; };
 		A06C610B2580AA490086D389 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06C610A2580AA490086D389 /* Preview Assets.xcassets */; };
+		A06C61192580C41C0086D389 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C61182580C41C0086D389 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A06C61002580AA470086D389 /* LoginSwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginSwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06C61032580AA470086D389 /* LoginSwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSwiftUIDemoApp.swift; sourceTree = "<group>"; };
-		A06C61052580AA470086D389 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A06C61052580AA470086D389 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A06C61072580AA490086D389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A06C610A2580AA490086D389 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A06C610C2580AA490086D389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A06C61182580C41C0086D389 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +54,8 @@
 		A06C61022580AA470086D389 /* LoginSwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A06C61152580C3CA0086D389 /* Modules */,
 				A06C61032580AA470086D389 /* LoginSwiftUIDemoApp.swift */,
-				A06C61052580AA470086D389 /* ContentView.swift */,
 				A06C61072580AA490086D389 /* Assets.xcassets */,
 				A06C610C2580AA490086D389 /* Info.plist */,
 				A06C61092580AA490086D389 /* Preview Content */,
@@ -67,6 +69,23 @@
 				A06C610A2580AA490086D389 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A06C61152580C3CA0086D389 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A06C61162580C3ED0086D389 /* LoginScene */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A06C61162580C3ED0086D389 /* LoginScene */ = {
+			isa = PBXGroup;
+			children = (
+				A06C61052580AA470086D389 /* LoginView.swift */,
+				A06C61182580C41C0086D389 /* LoginViewModel.swift */,
+			);
+			path = LoginScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A06C61062580AA470086D389 /* ContentView.swift in Sources */,
+				A06C61062580AA470086D389 /* LoginView.swift in Sources */,
 				A06C61042580AA470086D389 /* LoginSwiftUIDemoApp.swift in Sources */,
+				A06C61192580C41C0086D389 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
